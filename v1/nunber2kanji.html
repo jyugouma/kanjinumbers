@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  
+  <head>
+    <title>kanjinumber.com</title>
+    <meta charset="utf-8">
+    <style>
+        input[type="text"] { height: 20px; width: 250px; }
+        button { border-radius: 10px; padding: 10px;}
+    </style>
+    <meta name="viewport" content="width=device-width">
+  
+  </head>
+  <body>
+
+    <form name="form2">
+      <fieldset>
+      <legend>アラビア数字を漢数字にする</legend>
+      <p>
+      入力<input type="text" size="20" name="text1" id="text1" placeholder="0～9999999999999999までの整数を入力">
+      <br>
+      <label>出力<input type="text" size="50" name="text2" id="text2"></label>
+      <input type="button" name="button1" value="変換" onclick="num2kanji(document.form2.text1,document.form2.text2, {'p_one':1})">
+      </p>
+      </fieldset>
+      </form>
+      <script src="/v1/number2kanji.js" src="/v1/require.js"></script>
+    
+
+    </body>
+</html>
