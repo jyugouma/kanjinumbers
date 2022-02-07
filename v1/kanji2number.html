@@ -1,0 +1,27 @@
+<html lang="ja">
+
+  <head>
+    <title>kanjinumber.com</title>
+    <meta charset="utf-8">
+    <style>
+      input[type="text"] { height: 20px; width: 250px; }
+      button { border-radius: 10px; padding: 10px;}
+  </style>
+    <meta name="viewport" content="width=device-width">
+    <script data-main="/v1/kanji2number.js"  src="/v1/require.js"></script>
+  </head>
+  <body>
+    <legend>漢数字をアラビア数字にする</legend>
+    <form class="input-form">
+      <label>入力：<input type="text" name="text1" id="text" placeholder="0～9999999999999999までの漢数字の整数を入力"></label>
+      <input type="button" value="変換" id="button1">
+    </form>
+    <div class="result">
+      出力：<span class="ans-heading"></span>
+      <span class="ans-text" id="anser"></span>
+    </div>
+
+  
+    <!-- <script src="/v1/require.js" type="text/javascript" src="/v1/errkanji2num.php"></script>-->
+    </body>
+</html>
